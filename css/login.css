@@ -1,0 +1,131 @@
+html,body{
+  margin: 0;
+  height: 100%;
+  background: url(../img/cover.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family:Roboto;
+}
+
+body {
+  background:rgba(0,0,0,0.5);
+}
+
+.disclaimer{
+  margin-top: 65px;
+  color:#FFFFFF;
+  font-size:14px;
+  background: #18aa8d;
+  border-radius: 2px;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 260px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   -webkit-transition: opacity 2s ease-in;
+      -moz-transition: opacity 2s ease-in;
+      -o-transition: opacity 2s ease-in;
+      -ms-transition: opacity 2s ease-in;
+      transition: opacity 2s ease-in;
+}
+
+.disclaimer.load{
+ opacity: 1;
+}
+
+.disclaimer:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+.loginForm {
+  background : #FFFFFF;
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.loginForm:hover{
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+.loginForm h1 {
+  box-sizing: border-box !important;
+  font-weight:bold !important;
+  padding: 20px !important;
+  font-size:26px !important;
+  width: 100% !important;
+  background: #18aa8d !important;
+  color: white !important;
+  line-height: 150% !important;
+  border-radius: 3px 3px 0 0 !important;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.loginForm_input{
+  margin: 40px 25px !important;
+  width: 200px !important;
+  display: block !important;
+  border: none !important;
+  padding: 10px 0 !important;
+  border-bottom: solid 1px #1abc9c !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
+          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%) !important;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%) !important;
+  background-position: -200px 0 !important;
+  background-size: 200px 100% !important;
+  background-repeat: no-repeat !important;
+  color: #0e6252 !important;
+
+}
+.loginForm_input:focus, .loginForm_input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+
+.loginForm_input:focus::-webkit-input-placeholder, .loginForm_input:valid::-webkit-input-placeholder {
+  color: #1abc9c;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+.login_btn{
+  border: none;
+  background: #1abc9c;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.login_btn:hover {
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+#The magic happens in a few lines of code for the input:focus and input:valid. The CSS transform property plays a crucial role to achieve this little instant feedback effect.
+
+.loginForm input:focus::-webkit-input-placeholder, .loginForm input:valid::-webkit-input-placeholder {
+  color: #1abc9c;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
